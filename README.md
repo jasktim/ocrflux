@@ -63,7 +63,8 @@ pip install modelscope
 ## 3、使用modelscope下载模型
 
 ```bash
-modelscope download --model ChatDOC/OCRFlux-3B --local_dir ./OCRFlux-3B
+mkdir models
+modelscope download --model ChatDOC/OCRFlux-3B --local_dir ./models/OCRFlux-3B
 ```
 
 ## 4、运行代码
@@ -94,7 +95,7 @@ else:
     print("Parse failed.")
 
 ```
-运行代码，即可输出markdown格式的pdf内容
+运行代码test.py，即可输出markdown格式的pdf内容
 
 **测试效果：**
 ![jasktim](https://i-blog.csdnimg.cn/direct/ecea7990200c48edad8139901c1e4dda.png)
