@@ -21,6 +21,7 @@ OCRFlux是一个基于多模态大语言模型的工具包，专注于将PDF文�
 
 # 二、本地部署
 项目github：[AlexeiLeery/ocrflux](https://github.com/AlexeiLeery/ocrflux)
+
 在线体验：[Demo ](https://ocrflux.pdfparser.io/)
 
 在官方教程中，使用huggingface下载模型，使得大部分没有魔法的小伙伴无法尝鲜。
@@ -63,7 +64,10 @@ pip install modelscope
 ## 3、使用modelscope下载模型
 
 ```bash
+# 创建模型路径
 mkdir models
+
+# 下载OCRFlux-3B模型
 modelscope download --model ChatDOC/OCRFlux-3B --local_dir ./models/OCRFlux-3B
 ```
 
